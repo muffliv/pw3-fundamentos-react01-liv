@@ -1,18 +1,35 @@
-import logo from './logo.svg';
-import balelas from './livros/cavernas_aco.jpg'
 import './App.css';
+import cavernas from "./livros/cavernas_aco.jpg"
+import Livros from './components/Livros';
+
+const desc = `As Cavernas de Aço, de Isaac Asimov, é o primeiro romance da consagrada Série dos Robôs, uma das mais populares da ficção científica. 
+A história nasceu de um desafio: Asimov queria provar para seu editor que a ficção científica não era limitada e poderia ser incorporada a qualquer gênero literário, 
+inclusive nos dramas policiais. A obra foi publicada, pela primeira vez, na revista Galaxy Science Fiction, e o sucesso foi tão grande que, um ano depois, se tornou livro.`
 
 function App() {
   return (
     <div className="App">
-      <h3>As Balelas do Gado</h3>
-      <p>Isaac Askov</p>
+      <Livros
+        titulo = "As Cavernas de Aço"
+        autor = "Isaac Azimov"
+        imagem = {cavernas}
+        descricao = {desc}
+      />
 
-      <img src={balelas} alt='Capa do livro isso ai mermo'/>
+      <Livros
+        titulo = "Sol Desvelado"
+        autor = "Isaac Azimov"
+        imagem = {cavernas}
+        descricao = {desc}
+      />
 
-      <p>
-      As Cavernas de Aço, de Isaac Asimov, é o primeiro romance da consagrada Série dos Robôs, uma das mais populares da ficção científica. A história nasceu de um desafio: Asimov queria provar para seu editor que a ficção científica não era limitada e poderia ser incorporada a qualquer gênero literário, inclusive nos dramas policiais. A obra foi publicada, pela primeira vez, na revista Galaxy Science Fiction, e o sucesso foi tão grande que, um ano depois, se tornou livro. Na trama, Os Mundos Siderais, antigas colônias da Terra, possuem rígidas leis de imigração, e não aceitam mais terráqueos em seus planetas. Para agravar a situação, os robôs estão substituindo grande parte da mão de obra trabalhadora na Terra, levando os humanos a perderem seus empregos e privilégios de cidadãos.
-      </p>
+      <Livros
+        titulo = "Robôs da Alvorada"
+        autor = "Isaac Azimov"
+        imagem = {cavernas}
+        descricao = {desc}
+      />
+
     </div>
   );
 }
