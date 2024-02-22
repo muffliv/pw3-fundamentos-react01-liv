@@ -8,7 +8,7 @@ inclusive nos dramas policiais. A obra foi publicada, pela primeira vez, na revi
 
 function App() {
   return (
-    <div className="App">
+    <div className="card-book">
       <Livros
         titulo = "As Cavernas de Aço"
         autor = "Isaac Azimov"

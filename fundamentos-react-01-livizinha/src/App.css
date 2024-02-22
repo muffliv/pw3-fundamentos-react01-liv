@@ -1,9 +1,26 @@
-.App{
+.card-book{
   background-color: aquamarine;
-  width: 400px;
-  text-align: center; 
+  width: max(400px);
+  text-align: center;
+  padding: 2rem, 1rem;
+  border-radius: .3rem; 
 }
 
-.cardBook_img{
+.card-book_title{
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.card-book_author{
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.card-book_img{
   width: 300px;
+}
+
+.card-book_description{
+  font-size: 1rem;
+  font-weight: 400;
 }

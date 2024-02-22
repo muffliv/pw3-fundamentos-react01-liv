@@ -6,7 +6,7 @@ const Livros = ({titulo, autor, imagem, descricao}) => {
             <h3>{titulo}</h3>
             <p>{autor}</p>
 
-            <img className="cardBook_img" src={imagem} alt='Capa do livro isso ai mermo'/>
+            <img className="card-book_img" src={imagem} alt='Capa do livro isso ai mermo'/>
 
             <p>
                 {descricao}
