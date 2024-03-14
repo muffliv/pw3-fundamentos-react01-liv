@@ -9,11 +9,10 @@ function CreateUsers(){
 
 
     function createUsers(event) {
-        // event.preventDefault();
-        alert(`NOME: ${name} PROFISSÃO: ${job}`)
+        event.preventDefault();
 
         let user = JSON.stringify({name:name, job:job});
-        alert(user);
+        console.log(user);
 
         //AXIOS AQUI!
         axios.post('https://reqres.in/api/users', user)
